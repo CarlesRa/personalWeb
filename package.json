@@ -1,0 +1,23 @@
+{
+  "name": "mi_web",
+  "version": "1.0.0",
+  "description": "web personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build",
+    "start": "electron ."
+  },
+  "author": "Carles Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.4",
+    "electron-reload": "^1.4.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.38.5"
+  }
+  
+}

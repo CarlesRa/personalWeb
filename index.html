@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carles Ramos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="papiFlex">
+        <header class="header">
+            <div class="menu">
+                <div class="marca">
+                    &#174;Gravity Apps
+                </div>
+                <nav class="botonera">
+                    <ul>
+                        <li class="b4">
+                            <a href="trabajos/index.html">
+                                Trabajos
+                            </a>
+                        </li>
+                        <li class="b4">
+                            <a href="https://github.com/CarlesRa?tab=repositories">
+                                Github
+                            </a>
+                        </li>
+                        <li class="b4">
+                            <a href="https://www.facebook.com/j.carles11">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="b4">
+                            <a href="https://www.pccomponentes.com/trabaja-con-nosotros">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <section class="section">
+            <div class="texto">
+                <h1 class="titulo">Gravity Apps</h1>
+                <p>Gravity Apps nace de la ilusión, el trabajo y el esfuerzo.
+                    Iré subiendo contenido realizado en el instituto "IES numero 1 Xabia".</p>
+                <p>Mas adelante subiré proyectos que estoy empezando en el "Mundo real".</p>
+                <p class="ultimoP">Vuestro feedback es muy importante para
+                    mi desarrollo empresarial y profesional. </p>
+                <p>¡Gracias!</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="pie">
+                &#174;Gravity Apps
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    /*document.getElementById("pupuri").addEventListener("click",cambiarImagen);*/
+    /*Funcion para cambiar imagenes aleatoriamente*/
+    function cambiarImagen() {
+        console.log("funciona");
+        var i;
+        var imagenes = ["/home/jcrm/Documentos/imagenes/codigo01.jpg"
+            , "/home/jcrm/Documentos/imagenes/vi.jpg", "/home/jcrm/Documentos/imagenes/digico.jpeg",
+            "/home/jcrm/Documentos/imagenes/codigo02.jpg", "/home/jcrm/Documentos/imagenes/codigo03.jpg",
+            "/home/jcrm/Documentos/imagenes/codigo04.jpg"]
+        document.getElementById("pupuri").src = imagenes[Math.floor((Math.random() * imagenes.length))];
+    }
+</script>
+
+</html>

@@ -1,0 +1,139 @@
+*{
+    padding: 2.5px;
+    margin: 5px;
+    box-sizing: border-box;
+    color: green;
+}
+body{
+    background-color: black;
+    background-image: url(images1.jpeg)
+
+}
+body{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.papiFlex{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background-color: #834c69;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 100px;
+}
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .marca{
+            color: green;
+            font-size: 3em;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+            'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .botonera{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.5em;
+        }
+            ul li{
+                display: inline;
+                margin: auto;
+            }
+            ul li:hover{
+                text-shadow: 2px 2px black;
+            }
+            ul li a{
+                color: #523142;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+        .texto{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-size: 2em;
+        }
+            h1{
+                color: #ad5b87;
+                text-align: center;
+                font-size: 3em;
+                text-shadow: 2px 1px green;
+            }
+            p{
+                color: #ad5b87
+            }
+        img{
+            opacity: 0.4;
+            display: inline;
+        }
+            #pupuri{
+                box-shadow: 0 0 15px #000;
+                border-radius: 100px 100px;
+            }
+            #sonido{
+                border-radius: 200px;
+            }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #834c69;
+        height: 80px;
+        border-radius: 100px;
+        margin-top: 400px;
+    }
+    .pie{
+        font-size: 3em;
+    }
+
+    @media all and (max-width: 1000px){
+        .menu{
+            flex-direction: column;
+        }
+    }
+    @media all and (max-width: 600px){
+        /*.papiFlex{
+            display:inline-block;
+        }*/
+        div ul li a{
+            align-items: center;
+            flex-direction: column;
+            font-size: 1em;
+        }
+        .face{
+            align-items: baseline;
+        }
+        .texto{
+            font-size: 1em;
+        }
+        .marca{
+            font-size: 1.5em;
+        }
+        .pie{
+            font-size: 1.5em;
+        }
+        #pupuri{
+            width: 50px;
+        }
+    }
+    @media all and (max-width:230px){
+        .papiFlex{
+            display: inline;
+        }
+    }
